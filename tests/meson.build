@@ -1,4 +1,4 @@
-catch2_dep = dependency('catch2', fallback: ['catch2', 'catch2_dep'])
+catch2_dep = dependency('catch2', version: '>=3.0.0', fallback: ['catch2', 'catch2_with_main_dep'])
 
 test_exe = executable(
   'test_factorial',
